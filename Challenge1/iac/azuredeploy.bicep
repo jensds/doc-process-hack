@@ -11,7 +11,7 @@ param location string = 'westeurope'
 param locationDocumentIntelligence string = 'westeurope' // West Europe hast the latest models needed for Document Intelligence
 
 
-var prefix = 'hackdocs'
+var prefix = 'aa'
 var suffix = uniqueString(resourceGroup().id)
 
 /*
@@ -19,8 +19,8 @@ var suffix = uniqueString(resourceGroup().id)
 */
 
 var databaseAccountName = '${prefix}-cosmosdb-${suffix}'
-var databaseName = 'ContosoDB'
-var databaseContainerNames = ['PayStubs', 'LoanForms', 'LoanAgreements']
+var databaseName = 'DocumentIntelligenceDB'
+var databaseContainerNames = ['StationDocuments']
 
 var locations = [
   {
