@@ -1,5 +1,4 @@
 @allowed([
-  'swedencentral',
   'westeurope'
 ])
 @description('Azure location where resources should be deployed (e.g., swedencentral)')
