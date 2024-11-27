@@ -31,14 +31,12 @@
     }
   },
   "variables": {
-    "prefix": "hackdocs",
+    "prefix": "aa",
     "suffix": "[uniqueString(resourceGroup().id)]",
     "databaseAccountName": "[format('{0}-cosmosdb-{1}', variables('prefix'), variables('suffix'))]",
-    "databaseName": "ContosoDB",
+    "databaseName": "DocumentIntelligenceDB",
     "databaseContainerNames": [
-      "PayStubs",
-      "LoanForms",
-      "LoanAgreements"
+      "StationDocuments"
     ],
     "locations": [
       {
